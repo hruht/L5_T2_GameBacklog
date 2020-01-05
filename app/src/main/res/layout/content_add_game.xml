@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.AddGame"
+    tools:showIn="@layout/add_game"
+    android:background="@color/colorBackgroundDark">
+
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:minHeight="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        //TITLE
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_gravity="start|top">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/htitle" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //PLATFORM
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_gravity="center_vertical|start"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_Platform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hplatform" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        // DAY
+        <com.google.android.material.textfield.TextInputLayout
+            android:paddingStart="8dp"
+            android:paddingBottom="7dp"
+            android:layout_width="wrap_content"
+            android:minWidth="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_Day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/hday" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        // MONTH
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:minWidth="120dp"
+            android:paddingBottom="7dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_Month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/hmonth" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        // YEAR
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:minWidth="120dp"
+            android:paddingBottom="7dp"
+            android:paddingEnd="7dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ti_Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="@string/hyear" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Game Backlog</string>
+    <string name="deletegames">Delete games</string>
+    <string name="title_activity_add_game">Add Game</string>
+    <string name="htitle">Title</string>
+    <string name="hplatform">Platform</string>
+    <string name="hday">Day</string>
+    <string name="hmonth">Month</string>
+    <string name="hyear">Year</string>
+    <string name="msg_empty_game">Title cannot be empty</string>
+
+
+</resources>
